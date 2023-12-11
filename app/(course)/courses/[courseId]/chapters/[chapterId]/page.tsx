@@ -46,6 +46,7 @@ const ChapterIdPage = async ({
 
   return (
     <div>
+
       {userProgress?.isCompleted && (
         <Banner
           variant="success"
@@ -70,6 +71,7 @@ const ChapterIdPage = async ({
             completeOnEnd={completeOnEnd}
           />
         </div>
+
         <div>
           <div className="p-4 flex flex-col md:flex-row items-center justify-between">
             <h2 className="text-2xl font-semibold mb-2">

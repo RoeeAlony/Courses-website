@@ -11,7 +11,6 @@ type CourseWithProgressWithCategory = Course & {
 interface CoursesListProps {
   items: CourseWithProgressWithCategory[];
 }
-
 export const CoursesList = ({
   items
 }: CoursesListProps) => {
@@ -23,11 +22,11 @@ export const CoursesList = ({
             key={item.id}
             id={item.id}
             title={item.title}
-            imageUrl={item.imageUrl!}
+            imageUrl={item.imageUrl || '/defaultpic.jpg'} // Provide a default or placeholder image URL if null
             chaptersLength={item.chapters.length}
-            price={item.price!}
+            price={item.price || 0} // Provide a default price if null
             progress={item.progress}
-            category={item?.category?.name!}
+            category={item.category?.name || 'Unknown Category'} // Provide a default category name if null
           />
         ))}
       </div>

@@ -1,5 +1,12 @@
 # Tech Stack Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL 
 
+student user login:
+email: student@example.demo
+password: 1234
+
+Teacher user login:
+email: teacher@example.demo
+password: 1234
 
 Key Features:
 
